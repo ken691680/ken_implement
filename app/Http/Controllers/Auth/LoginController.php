@@ -60,9 +60,11 @@ class LoginController extends Controller
             return
                 response()->json([
                     'code' => '200',
-                    'msg' => 'login success',
+                    'msg' => '登入成功',
                 ], 200);
         }
+
+        return $this->sendFailedLoginResponse($request);
 
     }
 }

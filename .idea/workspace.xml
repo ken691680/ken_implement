@@ -1,15 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:ken_implement" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba5807a0-8370-4a23-8ea9-9f2ef2d57f11" name="Default Changelist" comment="" />
+    <list default="true" id="ba5807a0-8370-4a23-8ea9-9f2ef2d57f11" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/MemberData.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Infra/Models/AccessRecords.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Infra/Models/Article.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_04_062421_access_records_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/articles.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/articles_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Infra/Models/ContentPages.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Infra/Services/ImplementServices.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Infra/Services/ImplementServices.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_29_093143_create_content_pages_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_29_093143_create_article_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/content_pages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/edit_articles.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -102,14 +141,20 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1kwvvp1qkTkddFJuqF7C9WxbiHk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -132,33 +177,62 @@
       <option name="presentableId" value="Default" />
       <updated>1606624702193</updated>
       <workItem from="1606624703468" duration="64000" />
-      <workItem from="1606745042420" duration="14721000" />
+      <workItem from="1606745042420" duration="15499000" />
+      <workItem from="1606824852235" duration="1659000" />
+      <workItem from="1606827375011" duration="26977000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="344" y="209" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606810575224">
       <screen x="0" y="0" width="1280" height="796" />
     </state>
     <state x="344" y="209" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.796@0.0.1280.796" timestamp="1606810575224" />
+    <state x="417" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606923898644">
+      <screen x="0" y="0" width="1280" height="796" />
+    </state>
+    <state x="417" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.796@0.0.1280.796" timestamp="1606923898644" />
     <state x="378" y="162" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606786646405">
       <screen x="0" y="0" width="1280" height="796" />
     </state>
     <state x="378" y="162" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.796@0.0.1280.796" timestamp="1606786646405" />
-    <state x="301" y="133" key="NewPhpClassDialog" timestamp="1606812297728">
+    <state x="341" y="251" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1606825473590">
       <screen x="0" y="0" width="1280" height="796" />
     </state>
-    <state x="301" y="133" key="NewPhpClassDialog/0.0.1280.796@0.0.1280.796" timestamp="1606812297728" />
-    <state x="100" y="100" width="1080" height="600" key="dock-window-1" timestamp="1606810806110">
+    <state x="341" y="251" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.796@0.0.1280.796" timestamp="1606825473590" />
+    <state x="440" y="224" key="NewPhpClassDialog" timestamp="1607088305620">
+      <screen x="0" y="0" width="1280" height="796" />
+    </state>
+    <state x="440" y="224" key="NewPhpClassDialog/0.0.1280.796@0.0.1280.796" timestamp="1607088305620" />
+    <state x="371" y="23" width="909" height="773" key="dock-window-1" timestamp="1606825661837">
       <screen x="0" y="23" width="1280" height="773" />
     </state>
-    <state x="100" y="100" width="1080" height="600" key="dock-window-1/0.23.1280.773@0.23.1280.773" timestamp="1606810806110" />
+    <state x="371" y="23" width="909" height="773" key="dock-window-1/0.23.1280.773@0.23.1280.773" timestamp="1606825661837" />
     <state x="359" y="197" key="refactoring.ChangeSignatureDialog" timestamp="1606813566021">
       <screen x="0" y="0" width="1280" height="796" />
     </state>
     <state x="359" y="197" key="refactoring.ChangeSignatureDialog/0.0.1280.796@0.0.1280.796" timestamp="1606813566021" />
+    <state x="305" y="120" width="670" height="676" key="search.everywhere.popup" timestamp="1606957146857">
+      <screen x="0" y="0" width="1280" height="796" />
+    </state>
+    <state x="305" y="120" width="670" height="676" key="search.everywhere.popup/0.0.1280.796@0.0.1280.796" timestamp="1606957146857" />
   </component>
 </project>

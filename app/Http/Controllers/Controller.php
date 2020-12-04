@@ -20,17 +20,31 @@ class Controller extends BaseController
         $this->implementServices = $implementServices;
     }
 
-    public function showContentPages()
+    public function showEditArticles()
     {
-        return view('/content_pages');
+        return view('/edit_articles');
     }
 
-    public function gerCreatContentPages(Request $request)
+    public function getCreatedArticles(Request $request)
     {
             if (!empty($request)) {
                 $title = $request['title'];
                 $content = $request['content'];
-                $this->implementServices->getContentPagesCreat($title, $content);
+                $this->implementServices->getArticlesCreate($title, $content);
             }
+    }
+
+    public function showArticlesList()
+    {
+        return view('/articles_list', [
+            'list' => $this->implementServices->articlesListToPage()
+        ]);
+    }
+
+    public function showArticles($id)
+    {
+        return view('/articles', [
+            'data' => $this->implementServices->articlesToPage($id)
+        ]);
     }
 }

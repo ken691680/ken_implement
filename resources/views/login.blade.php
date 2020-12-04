@@ -50,7 +50,7 @@
             data:{'_token': $("input[name='_token']").val(), 'email': $('#email').val(), 'password': $('#password').val()},
 
             success: function (r) {
-                alert(r.msg);
+                alert('登入成功');
             },
 
             error: function () {

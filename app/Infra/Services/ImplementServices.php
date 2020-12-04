@@ -3,9 +3,7 @@
 
 namespace App\Infra\Services;
 
-
-
-use App\Infra\Models\ContentPages;
+use App\Infra\Models\Article;
 
 /**
  * Class ImplementServices
@@ -13,18 +11,37 @@ use App\Infra\Models\ContentPages;
  */
 class ImplementServices
 {
-    private $contentPages;
+    private $article;
 
-    public function __construct(ContentPages $contentPages)
+    public function __construct(Article $article)
     {
-        $this->contentPages = $contentPages;
+        $this->article = $article;
     }
 
-    public function getContentPagesCreat(string $contentTitle, string $content): string
+    public function getArticlesCreate(string $contentTitle, string $content): string
     {
         $data = ['title' => $contentTitle,
                  'content' => $content
         ];
-        return $this->contentPages->contentPagesCreat($data);
+        return $this->article->articlesCreat($data);
+    }
+
+    public function articlesListToPage()
+    {
+        $articlesList = $this->article->getArticlesList();
+
+        return $articlesList->isEmpty() ? [] : $articlesList->map(function ($item) {
+            return [
+                'id' => $item['id'],
+                'title' => $item['title']
+            ];
+        })->toArray();
+    }
+
+    public function articlesToPage($id)
+    {
+        $article = $this->article->getArticlesToPages($id);
+
+        return $article->isEmpty() ? [] : $article = $article->first()->toArray();
     }
 }

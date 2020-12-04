@@ -4,8 +4,9 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateContentPagesTable extends Migration
+class CreateArticleTable extends Migration
 {
+
     /**
      * Run the migrations.
      *
@@ -13,11 +14,11 @@ class CreateContentPagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('content_pages', function (Blueprint $table) {
+        Schema::create('article', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->text('title')->comment('標題');
             $table->text('content')->comment('內容');
-            $table->boolean('click_rate')->default(false)->comment('文章點擊數');
+            $table->string('article_rate')->nullable()->comment('文章點擊數');
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ class CreateContentPagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('content_pages');
+        Schema::dropIfExists('article');
     }
 }
